@@ -8,15 +8,19 @@ html{
   font-family: Audiowide;
 }
 
+.bg-city{
+  background-image: url("../images/city.jpg");
+}
+
 .bg-forest{
   background-image: url("../images/forest4k.jpg");
 }
 
-@import "compass/css3";
- @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
- @import "compass/reset";
- * {
-	 box-sizing: border-box;
+.img-opacity{
+  -webkit-mask-image: -webkit-gradient(linear, center bottom, center top,
+    color-stop(0.00,  rgba(0,0,0,0.2)),
+    color-stop(1.00,  rgba(0,0,0,1)));
+  }
 }
 
 .wrap {
