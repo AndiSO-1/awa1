@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+html{
+  height: 100vh;
+}
+
+.font-audiowide{
+  font-family: Audiowide;
+}
+
+.bg-forest{
+  background-image: url("../images/forest4k.jpg");
+}
+
+@import "compass/css3";
+ @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+ @import "compass/reset";
+ * {
+	 box-sizing: border-box;
+}
+
+.wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bar {
+  background: #e74c3c;
+  width: 0;
+  margin: 0.25em 0;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background 0.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  clear: both;
+}
+.bar:nth-of-type(2n) {
+  background: #ed7669;
+}
+.bar .label {
+  font-size: 0.75em;
+  padding: 1em;
+  background: #3d3d3d;
+  width: 8em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.bar .label.light {
+  background: #575757;
+}
+.count {
+  position: absolute;
+  right: 0.25em;
+  top: 0.75em;
+  padding: 0.15em;
+  font-size: 0.75em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
