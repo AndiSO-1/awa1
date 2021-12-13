@@ -19,12 +19,12 @@
           <h1>Santos Oliveira</h1>
         </div>
 
-        <div class="flex justify-between m-10">
-          <div class="w-1/2">
+        <div id="img-scene" class="m-10 w-100">
+          <div data-depth="0.2" class="w-1/2">
             <img src="images/youngman.png" class="w-full img-opacity" alt="">
             <!-- Mes compétences -->
           </div>
-          <div class="w-1/2">
+          <div data-depth="0.2" class="w-1/2" style="margin-left:50%;">
             <img src="images/youngman_sport.png" class="w-full img-opacity" alt="">
             <!-- Mes Hobbies -->
           </div>
@@ -65,5 +65,9 @@
       My informations ☺
     </footer>
 
+    <script type="text/javascript">
+      var scene = $('#img-scene').get(0);
+      var parallaxInstance = new Parallax(scene);
+    </script>
   </body>
 </html>
