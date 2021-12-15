@@ -13,28 +13,32 @@
 
     <div class="flex flex-col grow">
 
-      <div class="bg-city bg-center">
-        <div class="text-center text-5xl font-audiowide text-white my-5">
+      <div class="bg-city bg-center z-0">
+        <div class="text-center text-2xl md:text-6xl font-audiowide my-5 text-white">
           <h1>Andi</h1>
           <h1>Santos Oliveira</h1>
         </div>
 
-        <div id="img-scene" class="m-10 w-100">
-          <div data-depth="0.2" class="w-1/2">
-            <img src="images/youngman.png" class="w-full img-opacity" alt="">
-            <!-- Mes compétences -->
+        <div class="m-10 w-100 flex justify-around">
+          <div class="w-1/3 relative group hover:cursor-pointer hover:scale-125">
+              <img src="images/youngman.png" class="w-full img-opacity" alt="">
+              <p class="absolute top-1/2 text-center w-full text-2xl md:text-4xl hidden group-hover:block text-white opacity-70 bg-black">
+                Mes<br>Compétences
+              </p>
           </div>
-          <div data-depth="0.2" class="w-1/2" style="margin-left:50%;">
+          <div class="w-1/3 relative group hover:cursor-pointer hover:scale-125">
             <img src="images/youngman_sport.png" class="w-full img-opacity" alt="">
-            <!-- Mes Hobbies -->
+            <p class="absolute top-1/2 text-center w-full text-2xl md:text-4xl hidden group-hover:block text-white opacity-70 bg-black">
+              Mes<br>Hobbies
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="bg-forest">
+      <div class="bg-red-500">
         <div class="flex justify-center m-10 p-5">
           <div class="w-1/2 bg-gray-900">
-            <h1 class="text-center text-white my-3">Compétences</h1>
+            <h1 id="skills" class="text-center text-white my-3">Compétences</h1>
             <div class="holder">
               <div class="bar cf" data-percent="90%">
                 <span class="label">HTML</span>
@@ -56,7 +60,7 @@
         </div>
       </div>
 
-      <div class="bg-city">
+      <div class="bg-forest h-96">
         <h1 class="text-center text-white my-3">Mes hobbies</h1>
       </div>
     </div>

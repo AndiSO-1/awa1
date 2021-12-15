@@ -10,10 +10,12 @@ html{
 
 .bg-city{
   background-image: url("../images/city.jpg");
+  background-attachment: fixed;
 }
 
 .bg-forest{
   background-image: url("../images/forest4k.jpg");
+  background-attachment: fixed;
 }
 
 .img-opacity{
@@ -23,6 +25,7 @@ html{
   }
 }
 
+/* Classes for the chart */
 .wrap {
   width: 50%;
   margin: 0 auto;
