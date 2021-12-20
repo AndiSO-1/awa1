@@ -19,6 +19,16 @@ html{
   background-attachment: fixed;
 }
 
+.bg-road{
+  background-image: url("../images/road.jpg");
+  background-attachment: fixed;
+}
+
+.bg-darkwood{
+  background-image: url("../images/darkwood.jpg");
+  background-attachment: fixed;
+}
+
 .img-opacity{
   -webkit-mask-image: -webkit-gradient(linear, center bottom, center top,
 color-stop(0.00,  rgba(0,0,0,0.2)),

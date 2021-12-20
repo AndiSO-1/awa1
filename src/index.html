@@ -37,7 +37,7 @@
                 </pattern>
               </defs>
               <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.9">Andi</text>
-              <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.1">Andi</text>
+              <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.2">Andi</text>
             </svg>
             <h1>Santos Oliveira</h1>
           </div>
@@ -67,7 +67,7 @@
             fabulas. Enim laboris eiusmod, dolore singulis an graviterque.
           </div>
 
-          <div class="m-10 w-100 flex justify-around">
+          <div class="mt-10 mx-10 my-20 w-100 flex justify-around">
             <a href="#my-skills" class="w-1/3 relative group hover:cursor-pointer hover:scale-125">
               <img src="images/youngman.png" class="w-full img-opacity" alt="">
               <p class="absolute top-1/2 text-center w-full text-2xl md:text-4xl hidden group-hover:block text-white opacity-70 bg-black">
@@ -84,18 +84,37 @@
             </a>
           </div>
         </div>
-
-
-
       </div>
 
       <div id="trigger-chart">
       </div>
-      <div id="my-skills" class="bg-red-500">
+      <div id="my-skills" class="py-12 bg-red-500">
         <div class="max-width-1500 m-auto">
+
+          <h1 class="text-center text-white my-5 text-2xl md:text-6xl">Compétences</h1>
+
+          <div class="text-white text-center my-10">
+            CFC réalisé dans l'école...
+          </div>
+
+          <div class="text-white text-center my-10">
+            J'ai fait mon stage de CFC à...
+          </div>
+
+          <div class="text-white text-center my-10">
+            Travaillé chez...
+          </div>
+
+          <div class="text-white text-center my-10">
+            J'ai fait mon ES à...
+          </div>
+
+          <div class="text-white text-center my-10">
+            J'ai fait mon stage de ES à...
+          </div>
+
           <div class="flex justify-center m-10 p-5">
             <div class="w-2/3 bg-gray-900">
-              <h1 id="skills" class="text-center text-white my-3">Compétences</h1>
               <div class="holder">
                 <div class="bar cf" data-percent="90%">
                   <span class="label">HTML</span>
@@ -115,12 +134,47 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      <div class="bg-forest h-96">
-        <div class="flex justify-center m-10 p-5">
-          <h1 id="my-hobbies" class="text-center text-white my-3">Mes hobbies</h1>
+      <div id="my-hobbies" class="bg-darkwood py-12 relative" style="z-index:-7;">
+        <div class="max-width-1500 m-auto" style="z-index:-6;">
+
+          <h1 class="text-center text-white my-5 text-2xl md:text-6xl">Hobbies</h1>
+
+          <div class="text-white text-center my-10">
+            J'aime bien jouer à des jeux vidéos en tout genre.
+            <br>
+            Mes préférés sont des jeux
+            compétitif comme : League of Legends, TFT, Rocket League.
+            <br>
+            J'aime bien également jouer à des jeux comme call of duty
+            Black ops 4 ainsi que Minecraft.
+          </div>
+
+          <div class="text-white text-center my-10">
+            J'apprécie dessiner.
+            <br>
+            J'ai un compte Insta avec quelque un de mes dessins. http//...
+          </div>
+
+          <div class="text-white text-center my-10" style="z-index:10;">
+            J'adore regarder des animes ou de temps à autre des séries.
+            <br>
+            Je cherche à regarder les nouveaux animes lorsqu'ils viennent de
+            finir de sorir.
+            <br>
+            Les séries c'est plutôt lorsqu'on me les conseils.
+          </div>
+
+          <div id="icon-games" class="absolute h-full w-full top-0 left-0 opacity-50" style="z-index:-5;">
+            <img data-depth="0.2" class="max-w-xs absolute top-1/2 right-1/2" src="https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo-2009-2019.png" alt="">
+            <img data-depth="0.2" class="max-w-xs absolute top-1/4 right-1/4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rocket_League_logo.svg/1200px-Rocket_League_logo.svg.png" alt="">
+            <img data-depth="0.2" class="max-w-xs absolute top-2/3 right-44" src="https://logolook.net/wp-content/uploads/2021/06/Minecraft-Logo.png" alt="">
+            <img data-depth="0.2" class="max-w-xs absolute top-1/3 left-44" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Teamfight_Tactics_logo.png" alt="">
+          </div>
+
         </div>
       </div>
     </div>
@@ -130,8 +184,12 @@
     </footer>
 
     <script type="text/javascript">
-      // var scene = $('#img-scene').get(0);
-      // var parallaxInstance = new Parallax(scene);
+      var scene = $('#icon-games').get(0);
+      var parallaxInstance = new Parallax(scene, {
+        relativeInput: true,
+        hoverOnly: true,
+        calibrateX: true
+      });
     </script>
 
     <script type="text/javascript">
