@@ -2,6 +2,7 @@
 
 html{
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .font-audiowide{
@@ -20,9 +21,18 @@ html{
 
 .img-opacity{
   -webkit-mask-image: -webkit-gradient(linear, center bottom, center top,
-    color-stop(0.00,  rgba(0,0,0,0.2)),
+color-stop(0.00,  rgba(0,0,0,0.2)),
     color-stop(1.00,  rgba(0,0,0,1)));
-  }
+}
+
+.max-width-1500{
+  max-width: 1500px;
+}
+
+svg{
+  font-weight:bold;
+  max-width:600px;
+  height:100%;
 }
 
 /* Classes for the chart */
