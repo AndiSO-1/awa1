@@ -12,21 +12,25 @@ html{
 .bg-city{
   background-image: url("../images/city.jpg");
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .bg-forest{
   background-image: url("../images/forest4k.jpg");
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .bg-road{
   background-image: url("../images/road.jpg");
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .bg-darkwood{
   background-image: url("../images/darkwood.jpg");
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .img-opacity{
@@ -37,6 +41,23 @@ color-stop(0.00,  rgba(0,0,0,0.2)),
 
 .max-width-1500{
   max-width: 1500px;
+}
+
+.parallax-el-1{
+  top:5% !important;
+  left:14% !important;
+}
+.parallax-el-2{
+  top:15% !important;
+  left:80% !important;
+}
+.parallax-el-3{
+  top:60% !important;
+  left:12% !important;
+}
+.parallax-el-4{
+  top:60% !important;
+  left:70% !important;
 }
 
 svg{
